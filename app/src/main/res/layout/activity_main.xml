@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/grey_300">
     <ImageView
         android:id="@+id/activity_main_frame_001"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="fitCenter"
-        android:background="@android:color/darker_gray"/>
+        android:layout_height="300dp"
+        tools:src="@drawable/logo"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/activity_main_frame_002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="18:34"
+        android:gravity="center_horizontal"
+        android:textSize="42dp"/>
 </LinearLayout>
